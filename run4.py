@@ -67,20 +67,6 @@ len_test  = len(X_test)
 
 X_fit, X_eval, y_fit, y_eval= train_test_split(X_train, y_train, test_size=0.3)
 
-
-# param_test1 = { 
-# 'reg_alpha':[0.5, 1, 5, 10]
-# }
-
-# gsearch1 = GridSearchCV(estimator = xgb.XGBClassifier( learning_rate =0.1, n_estimators=140, max_depth=3,
-#  min_child_weight=6, gamma=0.1, subsample=0.85, colsample_bytree=0.8,
-#  objective= 'binary:logistic', nthread=4, scale_pos_weight=1, seed=27), 
-#  param_grid = param_test1, scoring='roc_auc',n_jobs=4,iid=False, cv=5)
-# gsearch1.fit(X_fit,y_fit)
-# print "gsearch1.grid_scores_",gsearch1.grid_scores_
-# print "gsearch1.best_params_", gsearch1.best_params_
-# print "gsearch1.best_score_", gsearch1.best_score_
-
 clf = None
 # subsampleVScolsample_bytree[subsample].appe
 

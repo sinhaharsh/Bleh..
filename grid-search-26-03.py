@@ -81,6 +81,22 @@ gsearch1.grid_scores_ [mean: 0.83590, std: 0.00988, params: {'reg_alpha': 0.5},
 gsearch1.best_params_ {'reg_alpha': 5}
 gsearch1.best_score_ 0.83670305227
 
+clf = xgb.XGBClassifier(missing=np.nan,  
+						learning_rate =0.09,
+						n_estimators=5000,
+						max_depth=3,
+						min_child_weight=6,
+						gamma=0.1,
+						subsample=0.85,
+						colsample_bytree=0.9,
+						reg_alpha=5,
+						objective= 'binary:logistic',
+						nthread=4,
+						scale_pos_weight=1,
+						seed=27)
+
+
+
 
 ################################################################################################################
 GRID SEARCH ON THETA = 1.9
@@ -125,3 +141,54 @@ gsearch2.grid_scores_ [
 						mean: 0.84173, std: 0.00775, params: {'gamma': 0.4}]
 gsearch2.best_params_ {'gamma': 0.2}
 gsearch2.best_score_ 0.84200499035
+
+gsearch2.grid_scores_ [
+					mean: 0.83736, std: 0.00503, params: {'subsample': 0.6, 'colsample_bytree': 0.6}, 
+					mean: 0.83767, std: 0.00386, params: {'subsample': 0.7, 'colsample_bytree': 0.6}, 
+					mean: 0.83714, std: 0.00510, params: {'subsample': 0.8, 'colsample_bytree': 0.6}, 
+					mean: 0.83772, std: 0.00427, params: {'subsample': 0.9, 'colsample_bytree': 0.6}, 
+					mean: 0.83655, std: 0.00380, params: {'subsample': 0.6, 'colsample_bytree': 0.7}, 
+					mean: 0.83753, std: 0.00464, params: {'subsample': 0.7, 'colsample_bytree': 0.7}, 
+					mean: 0.83692, std: 0.00356, params: {'subsample': 0.8, 'colsample_bytree': 0.7}, 
+					mean: 0.83733, std: 0.00466, params: {'subsample': 0.9, 'colsample_bytree': 0.7}, 
+					mean: 0.83721, std: 0.00400, params: {'subsample': 0.6, 'colsample_bytree': 0.8}, 
+					mean: 0.83713, std: 0.00454, params: {'subsample': 0.7, 'colsample_bytree': 0.8}, 
+					mean: 0.83709, std: 0.00460, params: {'subsample': 0.8, 'colsample_bytree': 0.8}, 
+					mean: 0.83723, std: 0.00462, params: {'subsample': 0.9, 'colsample_bytree': 0.8}, 
+					mean: 0.83712, std: 0.00435, params: {'subsample': 0.6, 'colsample_bytree': 0.9}, 
+					mean: 0.83665, std: 0.00405, params: {'subsample': 0.7, 'colsample_bytree': 0.9}, 
+					mean: 0.83743, std: 0.00426, params: {'subsample': 0.8, 'colsample_bytree': 0.9}, 
+					mean: 0.83701, std: 0.00382, params: {'subsample': 0.9, 'colsample_bytree': 0.9}]
+gsearch2.best_params_ {'subsample': 0.9, 'colsample_bytree': 0.6}
+gsearch2.best_score_ 0.837716971316
+
+gsearch2.grid_scores_ [
+					mean: 0.83990, std: 0.00281, params: {'subsample': 0.55, 'colsample_bytree': 0.85}, 
+					mean: 0.83872, std: 0.00249, params: {'subsample': 0.6, 'colsample_bytree': 0.85}, 
+					mean: 0.84090, std: 0.00268, params: {'subsample': 0.65, 'colsample_bytree': 0.85}, 
+					mean: 0.83924, std: 0.00247, params: {'subsample': 0.55, 'colsample_bytree': 0.9}, 
+					mean: 0.83929, std: 0.00235, params: {'subsample': 0.6, 'colsample_bytree': 0.9}, 
+					mean: 0.84116, std: 0.00317, params: {'subsample': 0.65, 'colsample_bytree': 0.9}, 
+					mean: 0.83959, std: 0.00239, params: {'subsample': 0.55, 'colsample_bytree': 0.95}, 
+					mean: 0.83960, std: 0.00298, params: {'subsample': 0.6, 'colsample_bytree': 0.95}, 
+					mean: 0.84055, std: 0.00298, params: {'subsample': 0.65, 'colsample_bytree': 0.95}]
+gsearch2.best_params_ {'subsample': 0.65, 'colsample_bytree': 0.9}
+gsearch2.best_score_ 0.841157083579
+
+gsearch2.grid_scores_ [
+					mean: 0.84088, std: 0.01113, params: {'reg_alpha': 1e-05}, 
+					mean: 0.84086, std: 0.01127, params: {'reg_alpha': 0.01}, 
+					mean: 0.84091, std: 0.01128, params: {'reg_alpha': 0.1}, 
+					mean: 0.84111, std: 0.01111, params: {'reg_alpha': 1}, 
+					mean: 0.82811, std: 0.01085, params: {'reg_alpha': 100}]
+gsearch2.best_params_ {'reg_alpha': 1}
+gsearch2.best_score_ 0.841114056991
+
+gsearch2.grid_scores_ [
+					mean: 0.84067, std: 0.00850, params: {'reg_alpha': 1}, 
+					mean: 0.84078, std: 0.00924, params: {'reg_alpha': 5}, 
+					mean: 0.84076, std: 0.00898, params: {'reg_alpha': 7}, 
+					mean: 0.84025, std: 0.00908, params: {'reg_alpha': 10}, 
+					mean: 0.83885, std: 0.00958, params: {'reg_alpha': 20}]
+gsearch2.best_params_ {'reg_alpha': 5}
+gsearch2.best_score_ 0.8407766712
