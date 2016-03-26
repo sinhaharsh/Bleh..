@@ -82,4 +82,46 @@ gsearch1.best_params_ {'reg_alpha': 5}
 gsearch1.best_score_ 0.83670305227
 
 
+################################################################################################################
+GRID SEARCH ON THETA = 1.9
+################################################################################################################
+gsearch1.grid_scores_ [
+						mean: 0.83996, std: 0.00925, params: {'max_depth': 3, 'min_child_weight': 1}, 
+						mean: 0.84095, std: 0.00858, params: {'max_depth': 3, 'min_child_weight': 3}, 
+						mean: 0.84090, std: 0.00967, params: {'max_depth': 3, 'min_child_weight': 5}, 
+						mean: 0.83731, std: 0.01033, params: {'max_depth': 5, 'min_child_weight': 1}, 
+						mean: 0.83838, std: 0.00963, params: {'max_depth': 5, 'min_child_weight': 3}, 
+						mean: 0.83859, std: 0.00926, params: {'max_depth': 5, 'min_child_weight': 5}, 
+						mean: 0.83337, std: 0.01157, params: {'max_depth': 7, 'min_child_weight': 1}, 
+						mean: 0.83237, std: 0.01100, params: {'max_depth': 7, 'min_child_weight': 3}, 
+						mean: 0.83471, std: 0.01041, params: {'max_depth': 7, 'min_child_weight': 5}, 
+						mean: 0.82670, std: 0.01064, params: {'max_depth': 9, 'min_child_weight': 1}, 
+						mean: 0.82988, std: 0.01059, params: {'max_depth': 9, 'min_child_weight': 3}, 
+						mean: 0.83057, std: 0.01149, params: {'max_depth': 9, 'min_child_weight': 5}]
+gsearch1.best_params_ {'max_depth': 3, 'min_child_weight': 3}
+gsearch1.best_score_ 0.840946583326
 
+gsearch2.grid_scores_ [
+						mean: 0.82955, std: 0.00715, params: {'max_depth': 1, 'min_child_weight': 2}, 
+						mean: 0.82955, std: 0.00715, params: {'max_depth': 1, 'min_child_weight': 3}, 
+						mean: 0.82955, std: 0.00715, params: {'max_depth': 1, 'min_child_weight': 4}, 
+						mean: 0.83764, std: 0.00734, params: {'max_depth': 2, 'min_child_weight': 2}, 
+						mean: 0.83771, std: 0.00744, params: {'max_depth': 2, 'min_child_weight': 3}, 
+						mean: 0.83750, std: 0.00788, params: {'max_depth': 2, 'min_child_weight': 4}, 
+						mean: 0.83864, std: 0.00784, params: {'max_depth': 3, 'min_child_weight': 2}, 
+						mean: 0.83849, std: 0.00758, params: {'max_depth': 3, 'min_child_weight': 3}, 
+						mean: 0.83884, std: 0.00774, params: {'max_depth': 3, 'min_child_weight': 4}, 
+						mean: 0.83830, std: 0.00728, params: {'max_depth': 4, 'min_child_weight': 2}, 
+						mean: 0.83817, std: 0.00737, params: {'max_depth': 4, 'min_child_weight': 3}, 
+						mean: 0.83825, std: 0.00697, params: {'max_depth': 4, 'min_child_weight': 4}]
+gsearch2.best_params_ {'max_depth': 3, 'min_child_weight': 4}
+gsearch2.best_score_ 0.838842538923
+
+gsearch2.grid_scores_ [
+						mean: 0.84146, std: 0.00726, params: {'gamma': 0.0}, 
+						mean: 0.84143, std: 0.00763, params: {'gamma': 0.1}, 
+						mean: 0.84200, std: 0.00709, params: {'gamma': 0.2}, 
+						mean: 0.84194, std: 0.00759, params: {'gamma': 0.3}, 
+						mean: 0.84173, std: 0.00775, params: {'gamma': 0.4}]
+gsearch2.best_params_ {'gamma': 0.2}
+gsearch2.best_score_ 0.84200499035
